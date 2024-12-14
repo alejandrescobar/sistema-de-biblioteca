@@ -38,7 +38,7 @@
                     <input type="password" class="form-control" id="senha" name="senha" placeholder="Digite sua senha" required>
                 </div>
                 <div class="form-group">
-                    <label for="confirmar_senha">Senha</label>
+                    <label for="confirmar_senha">Confirmar Senha</label>
                     <input type="password" class="form-control" id="senha" name="confirmar_senha" placeholder="Digite sua senha novamente" required>
                 </div>
                 <div class="form-group">

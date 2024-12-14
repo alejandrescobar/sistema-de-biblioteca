@@ -29,6 +29,10 @@ if($linhas > 0){
         echo '<script>window.location=" painel/index.php"</script>';
       
     }
+    if($res[0]['ativo'] == 'Sim'){
+        echo '<script>window.location=" painel/index.php"</script>';
+      
+    }
 
 
 

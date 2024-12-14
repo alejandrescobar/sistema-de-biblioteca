@@ -45,7 +45,7 @@ if ($result) {
                 <tr>
                     <th scope="col">ID</th>
                     <th scope="col">Email</th>
-                    <th scope="col">Nome</th>
+                    <th scope="col">CPF</th>
                     <th scope="col">Ativo</th>
                     <th scope="col">Ações</th>
                 </tr>

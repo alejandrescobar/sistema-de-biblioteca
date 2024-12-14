@@ -32,7 +32,7 @@
         }
         .carousel-item img {
             width: 100%;
-            height: 500px; /* Tamanho fixo para a imagem do carrossel */
+            height: 600px; /* Aumentando o tamanho da imagem do carrossel */
             object-fit: cover;
             filter: brightness(70%); /* Imagem escura por padrão */
             transition: filter 0.5s ease; /* Transição suave ao aplicar o filtro */
@@ -40,6 +40,24 @@
         .carousel-item:hover img {
             filter: brightness(100%); /* Clareia a imagem ao passar o mouse */
         }
+        /* Botão de sair */
+        .exit-button {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            background-color: #dc3545; /* Cor vermelha */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            z-index: 1000;
+        }
+        .exit-button:hover {
+            background-color: #c82333; /* Cor mais escura ao passar o mouse */
+        }
+
         .service-box {
             display: flex;
             flex-direction: column;
@@ -177,7 +195,7 @@
     </nav>
 
     <!-- Carrossel -->
-    <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+    <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -219,37 +237,37 @@
     <div class="container">
         <div class="row">
             <div class="col-sm">
-                <a href="site/cuidados.html" class="service-box estetica">
+                <a href="paginausuario/cuidados.php" class="service-box estetica">
                     <img src="img/escova-de-dente.png" alt="Ícone Estética">
                     <p>Cuidado geral</p>
                 </a>
             </div>
             <div class="col-sm">
-                <a href="site/cadatro.html" class="service-box protese">
+                <a href="paginausuario/implante.php" class="service-box protese">
                     <img src="img/proteses.png" alt="Ícone Prótese Dentária">
-                    <p>PRÓTESE</p>
+                    <p>Implante</p>
                 </a>
             </div>
             <div class="col-sm">
-                <a href="/site/ortodontia.html" class="service-box ortodontia">
+                <a href="paginausuario/ortodontia.php" class="service-box ortodontia">
                     <img src="img/ortodontico.png" alt="Ícone Ortodontia">
                     <p>ORTODONTIA</p>
                 </a>
             </div>
             <div class="col-sm">
-                <a href="/site/periodontia.html" class="service-box periodontia">
+                <a href="paginausuario/periodontia.php" class="service-box periodontia">
                     <img src="img/gengivas.png" alt="Ícone Periodontia">
                     <p>PERIODONTIA</p>
                 </a>
             </div>
             <div class="col-sm">
-                <a href="/site/endodontia.html" class="service-box endodontia">
+                <a href="paginausuario/endondontia.php" class="service-box endodontia">
                     <img src="img/canal-radicular.png" alt="Ícone Endodontia">
                     <p>ENDODONTIA</p>
                 </a>
             </div>
             <div class="col-sm">
-                <a href="/site/cadastro.html" class="service-box kids">
+                <a href="paginausuario/infantil.php" class="service-box kids">
                     <img src="img/dental.png" alt="Ícone Kids">
                     <p>KIDS</p>
                 </a>
@@ -262,18 +280,23 @@
         <i class="fab fa-whatsapp"></i>
     </a>
 
+    <!-- Botão de sair -->
+    <button class="exit-button" onclick="window.location.href='log-out.php'">Sair</button>
+
     <!-- Rodapé -->
     <footer class="footer text-center">
         <div class="container">
             <div class="social-media">
-                
                 <p>&copy; 2024 DR Marco. Todos os direitos reservados.</p>
             </div>
             <div class="contact-info">
-               
                 <p><a href="#">Política de Privacidade</a> | <a href="#">Termos de Serviço</a></p>
-                <img src="img/gmail.png" alt="Email">
-                <img src="img/instagram.png" alt="Instagram">
+                <a href="mailto:alemateu12354@gmail.com?subject=Assunto do E-mail&body=Olá, gostaria de marcar uma consulta">
+                    <img src="img/gmail.png" alt="Email">
+                </a>
+                <a href="https://www.instagram.com/marco_escobar87/" target="_blank">
+                    <img src="img/instagram.png" alt="Instagram">
+                </a>
             </div>
         </div>
     </footer>
